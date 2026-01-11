@@ -11,14 +11,14 @@ const CurrencySelect = () => {
   return (
     <div>
       <Select>
-        <SelectTrigger className="w-[180px]">
-          <SelectValue placeholder="Theme" />
+        <SelectTrigger className="flex w-[200px] bg-white border-[1px] rounded-bl-none rounded-br-none">
+          <SelectValue placeholder="Currency" />
         </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="usd">USD</SelectItem>
-          <SelectItem value="eur">EUR</SelectItem>
-          <SelectItem value="gbp">GBP</SelectItem>
-          <SelectItem value="all">ALL</SelectItem>
+        <SelectContent className="bg-white cursor-pointer">
+          <SelectItem className="cursor-pointer hover:bg-slate-100" value="usd">USD</SelectItem>
+          <SelectItem className="cursor-pointer hover:bg-slate-100" value="eur">EUR</SelectItem>
+          <SelectItem className="cursor-pointer hover:bg-slate-100" value="gbp">GBP</SelectItem>
+          <SelectItem className="cursor-pointer hover:bg-slate-100" value="all">ALL</SelectItem>
         </SelectContent>
       </Select>
     </div>
